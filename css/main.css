@@ -1,0 +1,43 @@
+.bear {
+  width: 256px;
+}
+
+#left-ear,
+#right-ear {
+  transform: translateY(0);
+  transition: all .5s linear;
+}
+
+.bear:hover #left-ear,
+.bear:hover #right-ear {
+  transform: translateY(-10px);
+}
+
+#left-eye,
+#right-eye {
+  animation: move 3s linear infinite;
+}
+
+@keyframes move {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(0);
+  }
+
+  75% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+}
